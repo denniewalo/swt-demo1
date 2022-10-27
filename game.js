@@ -70,9 +70,9 @@ document.addEventListener("keydown", onDocumentKeyDown, false);
 function onDocumentKeyDown(event) {
     var keyCode = event.which;
     if (keyCode == 87) {
-        robot.position.y += ySpeed;
+        robot.position.z -= ySpeed;
     } else if (keyCode == 83) {
-        robot.position.y -= ySpeed;
+        robot.position.z += ySpeed;
     } else if (keyCode == 65) {
         robot.position.x -= xSpeed;
     } else if (keyCode == 68) {
